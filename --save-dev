@@ -1,0 +1,12 @@
+
+> nodemon@2.0.7 postinstall /Users/handsomehenny/fullstack/acme-country-club/node_modules/nodemon
+> node bin/postinstall || exit 0
+
++ nodemon@2.0.7
+added 118 packages from 57 contributors and audited 187 packages in 7.134s
+
+12 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
