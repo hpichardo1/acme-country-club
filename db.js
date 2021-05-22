@@ -55,7 +55,7 @@ const syncAndSeed = async() => {
   try{
     await conn.sync({force: true})
     // await conn.authenticate();
-    const members = await membersData.map(name => Member.create({first_name: name})) 
+    const members = await Promise.all(membersData.map(name => Member.create({first_name: name}))) 
 
   }
   catch(error){
@@ -64,5 +64,11 @@ const syncAndSeed = async() => {
 }
 
 module.exports = {
-  syncAndSeed
+  conn, 
+  syncAndSeed,
+  models: {
+    Faciliities, 
+    Member, 
+    Booking
+  }
 }
